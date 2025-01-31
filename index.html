@@ -13,11 +13,11 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-[#FFF9F4] border border-[black]">
+    <header class="bg-[#FFF9F4] border border-[black] lg:border-none">
         <!-- nav -->
-        <div class="navbar md:container mx-auto py-5  w-[95%]">
+        <div class="navbar lg:container mx-auto py-5  w-[95%]">
             <div class="navbar-start">
-              <div class="dropdown hidden lg:block">
+              <div class="dropdown  hidden lg:block">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -59,12 +59,12 @@
             </div>
            
             <div class="navbar-end flex gap-3">
-                <div>
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                <div class="lg:hidden">
+                    <i class="cursor-pointer fa-solid fa-bars" aria-hidden="true"></i>
                 </div>
                 <div class="hidden lg:block">
-                    <i class="fa fa-thin fa-bell fa-lg mr-1"></i>
-                    <i class="fa fa-thin fa-magnifying-glass fa-lg"></i>
+                    <i class="cursor-pointer fa fa-thin fa-bell fa-lg mr-1"></i>
+                    <i class="cursor-pointer fa fa-thin fa-magnifying-glass fa-lg"></i>
                 </div>
               <a href="#" class="hidden lg:block py-[10px] px-[30px] border rounded-lg hover:bg-[#FFDC26] sora-font hover:text-white transform duration-300 ease-in-out" style="border:1px solid var(--Accent, #FFDC26);">Login</a>
               <a href="#" class="hidden lg:block py-[10px] px-[30px] bg-[#FFDC26] rounded-lg hover:bg-transparent hover:text-[#FFDC26] border hover:border-[#FFDC26] sora-font transform duration-300 ease-in-out text-white">Register</a>
@@ -72,5 +72,138 @@
             </div>
           </div>
     </header>
+    <!-- banner -->
+     <section class="w-[95%] md:w-[90%] lg:container mx-auto mt-20">
+      <div class="bg-left-bottom min-h-screen bg-no-repeat bg-contain" style="background-image: url(c1-assets/cat-big.png);">
+          <div>
+            <h1 class="text-[30px] lg:text-[56px] adlam-display-font">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+            <p class="sora-font text-base lg:text-xl lg:leading-9 mb-6 mt-3">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="sora-font text-xl bg-[#FFDC26] px-5 py-2 rounded-lg border hover:bg-transparent hover:text-[#FFDC26] hover:border-[#FFDC26] transform duration-300 ease-in-out">Find a pet</button>
+          </div>
+      </div>
+     </section>
+     <!-- card -->
+      <section class="w-[95%] md:w-[90%] lg:container mx-auto mt-28">
+        <h2 class=" text-2xl lg:text-4xl adlam-display-font">Browse By Categories</h2>
+        <div class="grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+          <div class="card bg-[#F9DF8A] w-[200px] h-[254px] flex justify-center items-center py-9">
+            <figure class="w-[100px] h-[100px] bg-white rounded-full">
+              <img
+                src="c1-assets/dog-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-0 mt-6">
+              <h2 class="card-title adlam-display-font text-[17px] lg:text-xl">Dog</h2>
+              <p class="text-[13px] lg:text-base sora-font">3 items</p>
+              
+            </div>
+          </div>
+          <div class="card bg-[#F9DF8A] w-[200px] h-[254px] flex justify-center items-center py-9">
+            <figure class="w-[100px] h-[100px] bg-white rounded-full">
+              <img
+                src="c1-assets/fish-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-0 mt-6">
+              <h2 class="card-title adlam-display-font text-[17px] lg:text-xl">Fish</h2>
+              <p class="text-[13px] lg:text-base sora-font">3 items</p>
+              
+            </div>
+          </div>
+          <div class="card bg-[#F9DF8A] w-[200px] h-[254px] flex justify-center items-center py-9">
+            <figure class="w-[100px] h-[100px] bg-white rounded-full">
+              <img
+                src="c1-assets/cat-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-0 mt-6">
+              <h2 class="card-title adlam-display-font text-[17px] lg:text-xl">Cat</h2>
+              <p class="text-[13px] lg:text-base sora-font">3 items</p>
+              
+            </div>
+          </div>
+          <div class="card bg-[#F9DF8A] w-[200px] h-[254px] flex justify-center items-center py-9">
+            <figure class="w-[100px] h-[100px] bg-white rounded-full">
+              <img
+                src="c1-assets/bird-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-0 mt-6">
+              <h2 class="card-title adlam-display-font text-[17px] lg:text-xl">Birds</h2>
+              <p class="text-[13px] lg:text-base sora-font">3 items</p>
+              
+            </div>
+          </div>
+          <div class="card bg-[#F9DF8A] w-[200px] h-[254px] flex justify-center items-center py-9">
+            <figure class="w-[100px] h-[100px] bg-white rounded-full">
+              <img
+                src="c1-assets/mouse-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-0 mt-6">
+              <h2 class="card-title adlam-display-font text-[17px] lg:text-xl">Small pet</h2>
+              <p class="text-[13px] lg:text-base sora-font">3 items</p>
+              
+            </div>
+          </div>
+          <div class="card bg-[#F9DF8A] w-[200px] h-[254px] flex justify-center items-center py-9">
+            <figure class="w-[100px] h-[100px] bg-white rounded-full">
+              <img
+                src="c1-assets/rabbit-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-0 mt-6">
+              <h2 class="card-title adlam-display-font text-[17px] lg:text-xl">Rabit</h2>
+              <p class="text-[13px] lg:text-base sora-font">3 items</p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- t-shirt -->
+       <section class="bg-[#FFF9F4] py-28 mt-28">
+        <div class="container mx-auto">
+          <h2 class="text-4xl adlam-display-font ">Trending Pet Products</h2>
+
+          <div class="mt-10">
+            <div class="card card-side bg-[#F9DF8A] w-[424px] h-[400]">
+             
+              <div class="card-body flex-grow-0 pb-0">
+                <h2 class="card-title text-[32px] adlam-display-font ">T- Shirt For Dogs</h2>
+                <p class="sora-font text-base py-4">Discover a world of treats, toys, and <br> essentials handpicked for </p>
+                <div class="card-actions justify-start">
+                  <button class="cursor-pointer sora-font bg-white px-5 py-2  rounded-lg hover:bg-[#FFDC26] hover:text-white  transform duration-300 ease-in-out">Shop Now</button>
+                  <figure class="relative start-[4rem]">
+                    <img
+                      src="c1-assets/cute-pet-mid.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <!-- <div>
+                <h2>T- Shirt For Dogs</h2>
+                <p>Discover a world of treats, toys, and <br>
+                 essentials handpicked for </p>
+                <button>Shop Now</button>
+                  <div>
+                    <img src="c1-assets/cute-pet-mid.png" alt="">
+                  </div>
+            </div> -->
+
+            <div>
+              <div></div>
+            </div>
+          </div>
+
+        </div>
+       </section>
 </body>
 </html>
