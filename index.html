@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- icon -->
     <script src="https://kit.fontawesome.com/e2af3dae98.js" crossorigin="anonymous"></script>
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="c1-assets/logo-header.png" type="image/x-icon">
 
@@ -75,8 +77,8 @@
     </header>
     <!-- banner -->
      <section class="w-[95%] md:w-[90%] lg:container mx-auto mt-20 ">
-      <div class="bg-left-bottom min-h-screen bg-no-repeat bg-contain" style="background-image: url(c1-assets/cat-big.png);">
-          <div>
+      <div  data-aos="zoom-in-down" data-aos-duration="2000" class=" bg-left-bottom min-h-screen bg-no-repeat bg-contain" style="background-image: url(c1-assets/cat-big.png);">
+          <div class="">
             <h1 class="text-[30px] lg:text-[56px] adlam-display-font">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
             <p class="sora-font text-base lg:text-xl lg:leading-9 mb-6 mt-3">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
             <button class="sora-font text-xl bg-[#FFDC26] px-5 py-2 rounded-lg border hover:bg-transparent hover:text-[#FFDC26] hover:border-[#FFDC26] transform duration-300 ease-in-out">Find a pet</button>
@@ -407,5 +409,11 @@
               </div>
             </div>
           </footer>
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+          <script>
+            AOS.init();
+          </script>
 </body>
 </html>
